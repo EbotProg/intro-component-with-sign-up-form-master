@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <link rel="stylesheet" href="/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="p-inline-500 ">
+
+  <main class="flex-column gap-850">
+    <section class="flex-column gap-500 main_content_section">
+      <h1 class="heading fs-400 lh-600 clr-light fw-bold">Learn to code by watching others</h1>
+      <p class="clr-light text-center fw-light">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+    </section>
+
+    <section class="flex-column gap-600 main_form_section">
+      <div class="bg-accent-100 p-inline-850 p-block-400 text-center br-300 box-shadow-bottom">
+        <p class="clr-light"><span class="fw-bold">Try it free 7 days</span> <span class="fw-light">then $20/mo. thereafter</span></p>
+      </div>
+
+      <form class="bg-light p-500 br-300 box-shadow-bottom flex-row gap-400" name="claim_form">
+        <div class="input_div">
+          <!-- <label for="">First Name</label> -->
+          <div class="p-block-100">
+<input id="first_name_input" type="text" placeholder="First Name" name="first_name" class="p-inline-400 br-100 clr-neutral-100 fw-md fs-50">
+          <img class="error_img d-none" src="/images/icon-error.svg" alt="error icon">
+          
+          </div>
+          <p class="error_msg d-none" id="error_msg"> I am an error</p>
+        </div>
+        <div class="input_div">
+          <!-- <label for="">Last Name</label> -->
+          <div class="p-block-100">
+<input id="last_name_input" name="last_name" type="text" placeholder="Last Name" class="p-inline-400 br-100 clr-neutral-100 fw-md fs-50">
+          <img class="error_img d-none" src="/images/icon-error.svg" alt="error icon">
+          
+          </div>
+          <p class="error_msg d-none" id="error_msg"> I am an error</p>
+        </div>
+        <div class="input_div">
+          <!-- <label for="">Email Address</label> -->
+          <div class="p-block-100">
+<input id="email_input" name="email" type="email" placeholder="Email Address" class="p-inline-400 br-100 clr-neutral-100 fw-md fs-50">
+          <img class="error_img d-none" src="/images/icon-error.svg" alt="error icon">
+          
+          </div>
+          <p class="error_msg d-none" id="error_msg"> I am an error</p>
+        </div>
+        <div class="input_div">
+          <!-- <label for="">Password</label> -->
+          <div class="p-block-100">
+<input id="password_input" name="password" type="password" placeholder="Password" class="p-inline-400 br-100 clr-neutral-100 fw-md fs-50">
+          <img class="error_img d-none" src="/images/icon-error.svg" alt="error icon">
+          
+          </div>
+          <p class="error_msg d-none" id="error_msg"> I am an error</p>
+        </div>
+
+        <button id="claim_btn" class="claim_btn uppercase p-inline-300 p-block-400 border-none br-200 bg-primary-200 clr-light border-bottom-150">
+          claim your free trial
+        </button>
+
+        <p class="p-inline-300 text-center fs-50 lh-600"> <span class="clr-neutral-200 fw-light">By clicking the button, you are agreeing to our </span><span class="clr-primary-100 fw-bold">Terms and Services</span></p>
+      </form>
+    </section>
+  </main>
+
+  
+  <script src="index.js"></script>
+</body>
+</html>
