@@ -125,7 +125,7 @@ svg {
 /* General Styling */
 
 body {
-    background-image: url('/images/bg-intro-mobile.png');
+    background-image: url('./images/bg-intro-mobile.png');
     background-color: var(--clr-primary-100);
     display: flex;
     justify-content: center;
@@ -211,7 +211,7 @@ box-shadow: 0px 7px 0px 0px var(--clr-box-shadow);
 @media only screen and (min-width: 50em) {
 
     body {
-        background-image: url('/images/bg-intro-desktop.png');
+        background-image: url('./images/bg-intro-desktop.png');
         height: 100vh;
     }
 
